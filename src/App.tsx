@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import Slider from "react-slick";
 import './App.css';
 import "slick-carousel/slick/slick.css";
