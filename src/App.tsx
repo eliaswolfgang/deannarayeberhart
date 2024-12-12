@@ -1,50 +1,22 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import Slider from "react-slick";
-import './App.css';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import { useLocation, Outlet } from "react-router-dom";
 
-const SimpleSlider: React.FC = () => {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+function App() {
+  const currentPage = useLocation().pathname;
+
   return (
-    <Slider {...settings}>
-      <div>
-        <h3>1</h3>
-      </div>
-      <div>
-        <h3>2</h3>
-      </div>
-      <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
-      </div>
-    </Slider>
+    <div>
+      <Header>
+        <Nav currentPage={currentPage} />
+      </Header>
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
-
-function App() {
-  // const [count, setCount] = useState(0)
-
-  return (
- <SimpleSlider />
-  )
-}
-
-export default App
+export default App;
