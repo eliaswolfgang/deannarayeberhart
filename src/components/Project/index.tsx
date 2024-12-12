@@ -1,13 +1,13 @@
-import { removeHyphensAndCapitalize } from '../../utils/helpers';
-import * as projects from '../../assets';
+import { removeHyphensAndCapitalize } from '../../utils/helpers.js';
+// import * as projects from '../../assets/index.js';
 
-function Project({ project }) {
+const Project: React.FC<{project: { name: string; repo: string; link: string; description: string;}}> = ({ project }) => {
   const { name, repo, link, description } = project;
 
   return (
     <div className="project" key={name}>
       <img
-        src={projects[name]}
+        src='https://placehold.co/600x400/EEE/31343C'
         alt={removeHyphensAndCapitalize(name)}
         className="project-bg"
       />
