@@ -10,6 +10,7 @@ import Portfolio from './components/Portfolio/index.js';
 import Contact from './components/Contact/index.js';
 import Resume from './components/Resume/index.js';
 import './index.css';
+import UnderConstruction from './components/UnderConstruction/index.js';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <About />,
+        element: <UnderConstruction />,
       },
       {
         path: 'portfolio',
