@@ -26,7 +26,7 @@ const operaMedia = [
     link: 'https://www.youtube.com/watch?v=_76MWXNfTvs&ab_channel=DeannaRayEberhart%2CMezzo-soprano',
     description: (
       <span>
-        "Parto, ma tu ben mio" from Mozart's <em>La Clemenza di Tito"</em>{' '}
+        "Parto, ma tu ben mio" from Mozart's <em>La Clemenza di Tito</em>{' '}
         (2023)
       </span>
     ),
