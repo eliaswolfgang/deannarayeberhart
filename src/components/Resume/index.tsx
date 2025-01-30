@@ -8,13 +8,13 @@ function Resume() {
         <Col xs={12} md={6}>
           <div className='d-flex flex-column justify-content-center mt-3'>
             <h3>CV</h3>
-            <object style={{ height: '80vh' }} data={CV_PDF}></object>
+            <object style={{ height: '80vh' }} data={CV_PDF} type='image/pdf'></object>
           </div>
         </Col>
         <Col xs={12} md={6}>
           <div className='d-flex flex-column justify-content-center mt-3'>
             <h3>Résumé</h3>
-            <object style={{ height: '80vh' }} data={Resume_PDF}></object>
+            <object style={{ height: '80vh' }} data={Resume_PDF} type='image/pdf'></object>
           </div>
         </Col>
       </Row>
