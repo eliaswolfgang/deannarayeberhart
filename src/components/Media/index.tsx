@@ -1,6 +1,7 @@
 import { Row, Col, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpotify, faApple } from '@fortawesome/free-brands-svg-icons';
+import { SpinningCircles } from 'react-loading-icons';
 import ReactPlayer from 'react-player/lazy';
 
 const operaMedia = [
@@ -70,6 +71,7 @@ function Media() {
                   width='100%'
                   height='25rem'
                   controls
+                  fallback={<SpinningCircles />}
                 />
                 <p>{description}</p>
               </>
@@ -100,6 +102,7 @@ function Media() {
                   height='25rem'
                   controls
                   style={{ margin: '0.75rem 0rem' }}
+                  fallback={<SpinningCircles />}
                 />
               </>
             ))}
