@@ -1,26 +1,34 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { Form, Button, Container, Col, Row } from 'react-bootstrap';
 
 import { validateEmail } from '../../utils/helpers.js';
 
 function Contact() {
   const [formState, setFormState] = useState({
-    name: '',
-    email: '',
+    from_name: '',
+    reply_to: '',
     message: '',
   });
 
   const [errorMessage, setErrorMessage] = useState('');
-  const { name, email } = formState;
+  const { from_name, reply_to, message } = formState;
+  const SERVICE_ID = 'service_deanna_ray_mezzo';
+  const TEMPLATE_ID = 'template_8cjthkc';
 
   const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log(e.currentTarget);
     if (!errorMessage) {
-      console.log('Submit Form', formState);
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.currentTarget, {
+        publicKey: 'vDvgS5b65FSmKdgtz',
+      });
+      setFormState({ from_name: '', reply_to: '', message: '' });
     }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.name === 'email') {
+    if (e.target.name === 'reply_to') {
       const isValid = validateEmail(e.target.value);
       if (!isValid) {
         setErrorMessage('Your email is invalid.');
@@ -29,47 +37,61 @@ function Contact() {
       }
     } else {
       if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
+        setErrorMessage(`${e.target.dataset.name} is required.`);
       } else {
         setErrorMessage('');
       }
     }
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
-    }
+    setFormState({ ...formState, [e.target.name]: e.target.value });
   };
 
   return (
-    <section>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            defaultValue={name}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input
-            type="email"
-            name="email"
-            defaultValue={email}
-            onChange={handleChange}
-          />
-        </div>
-        
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+    <Container>
+      <Row className='mt-5'>
+        <Col xs={12}>
+          <Form style={{width: '100%'}} onSubmit={handleSubmit}>
+            <Form.Label>Name</Form.Label>
+            <Form.Control
+              type='text'
+              name='from_name'
+              data-name='Name'
+              value={from_name}
+              onChange={handleChange}
+            />
+            <Form.Label>Email</Form.Label>
+            <Form.Control
+              type='email'
+              name='reply_to'
+              data-name='Email'
+              value={reply_to}
+              onChange={handleChange}
+            />
+            <Form.Label>Message</Form.Label>
+            <Form.Control
+              type='text'
+              as='textarea'
+              rows={6}
+              name='message'
+              data-name='Message'
+              value={message}
+              onChange={handleChange}
+            />
+            {errorMessage && (
+              <div>
+                <p className='text-danger'>{errorMessage}</p>
+              </div>
+            )}
+            <Button
+              className='my-2'
+              style={{ backgroundColor: 'darkgreen', color: 'lightgreen' }}
+              type='submit'
+            >
+              Submit
+            </Button>
+          </Form>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

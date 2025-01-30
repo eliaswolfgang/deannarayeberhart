@@ -1,13 +1,19 @@
-import coverImage from '../../assets/cover/cover-image.jpg';
+import coverImage from '../../assets/DSC_1982.jpg';
+import NavBar from '../Nav';
+import { Image } from 'react-bootstrap';
 
 const Header: React.FC = () => {
-
   return (
-    <header className="flex-row space-between px-1">
-      <h1>Deanna Ray Eberhart</h1>
-      <img src={coverImage} alt="wooden background"></img>
+    <header>
+      <Image
+        fluid
+        className='cover-image'
+        src={coverImage}
+        alt='wooden background'
+      />
+      <NavBar />
     </header>
   );
-}
+};
 
 export default Header;

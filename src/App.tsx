@@ -1,21 +1,23 @@
-import Header from "./components/Header";
-// import Nav from "./components/Nav";
-import Footer from "./components/Footer";
-import { Outlet } from "react-router-dom";
+import Header from './components/Header';
+import Footer from './components/Footer';
+import { Outlet } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
+import './typography.css';
+import 'react-photo-view/dist/react-photo-view.css';
 
 function App() {
   // const currentPage = useLocation().pathname;
 
   return (
-    <div>
-      <Header>
-        {/* <Nav currentPage={currentPage} /> */}
-      </Header>
-      <main>
+    <>
+      <Header />
+      <Container fluid>
         <Outlet />
-      </main>
+      </Container>
       <Footer />
-    </div>
+    </>
   );
 }
 

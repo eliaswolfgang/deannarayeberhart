@@ -1,29 +1,42 @@
-import { Link } from 'react-router-dom';
-import { capitalizeFirstLetter } from '../../utils/helpers.js';
+import { Nav, Navbar } from 'react-bootstrap';
+import { Link, useLocation } from 'react-router-dom';
 
-const Nav: React.FC<{currentPage: string}> = ({ currentPage }) => {
-  const pages = ['portfolio', 'contact', 'resume'];
-
+const NavBar = () => {
+  const { pathname } = useLocation();
   return (
-    <nav>
-      <ul className="flex-row">
-        <li
-          className={`mx-5 ${currentPage === '/' && 'navActive'}`}
-          key="about"
-        >
-          <Link to="/">About</Link>
-        </li>
-        {pages.map((page) => (
-          <li
-            className={`mx-5 ${currentPage === `/$page}` && 'navActive'}`}
-            key={page}
-          >
-            <Link to={`/${page}`}>{capitalizeFirstLetter(page)}</Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <Navbar expand='sm' className='justify-content-end'>
+      <Navbar.Brand className={pathname === '/' ? 'navActive' : ''}>
+        <h1>
+          <Link to='/'>Deanna Ray Eberhart</Link>
+        </h1>
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls='dre-hamburger-nav' />
+      <Navbar.Collapse id='dre-hamburger-nav'>
+        <Nav>
+          <Nav.Link className={pathname === '/portfolio' ? 'navActive' : ''}>
+            <h3>
+              <Link to='/gallery'>Gallery</Link>
+            </h3>
+          </Nav.Link>
+          <Nav.Link className={pathname === '/portfolio' ? 'navActive' : ''}>
+            <h3>
+              <Link to='/media'>Media</Link>
+            </h3>
+          </Nav.Link>
+          <Nav.Link className={pathname === '/contact' ? 'navActive' : ''}>
+            <h3>
+              <Link to='/contact'>Contact</Link>
+            </h3>
+          </Nav.Link>
+          <Nav.Link className={pathname === '/resume' ? 'navActive' : ''}>
+            <h3>
+              <Link to='/resume'>Résumé</Link>
+            </h3>
+          </Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
-}
+};
 
-export default Nav;
+export default NavBar;

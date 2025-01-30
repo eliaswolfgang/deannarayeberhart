@@ -1,32 +1,23 @@
+import { Row, Col, Container } from 'react-bootstrap';
+import Resume_PDF from '../../assets/Resume_2025.pdf';
+import CV_PDF from '../../assets/CV_2025.pdf';
+
 function Resume() {
   return (
-    <section className="my-5">
-      <div className="my-2">
-      <p>
-        Download my <a href="https://www.linkedin.com/">resume</a>
-        </p>
-        <h3>Front-end Proficiencies</h3>
-        <ul className="skills">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>jQuery</li>
-          <li>responsive design</li>
-          <li>React</li>
-          <li>Bootstrap</li>
-        </ul>
-        <h3>Back-end Proficiencies</h3>
-        <ul className="skills">
-          <li>APIs</li>
-          <li>Node</li>
-          <li>Express</li>
-          <li>PostgreSQL, Sequelize</li>
-          <li>MongoDB, Mongoose</li>
-          <li>REST</li>
-          <li>GraphQL</li>
-        </ul>
-      </div>
-    </section>
+      <Row className='my-5 mx-5'>
+        <Col xs={12} md={6}>
+          <div className='d-flex flex-column justify-content-center mt-3'>
+            <h3>CV</h3>
+            <object style={{ height: '80vh' }} data={CV_PDF}></object>
+          </div>
+        </Col>
+        <Col xs={12} md={6}>
+          <div className='d-flex flex-column justify-content-center mt-3'>
+            <h3>Résumé</h3>
+            <object style={{ height: '80vh' }} data={Resume_PDF}></object>
+          </div>
+        </Col>
+      </Row>
   );
 }
 
