@@ -1,4 +1,4 @@
-import { Row, Col, Container } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import Resume_PDF from '../../assets/Resume_2025.pdf';
 import CV_PDF from '../../assets/CV_2025.pdf';
 
