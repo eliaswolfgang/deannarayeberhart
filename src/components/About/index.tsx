@@ -17,8 +17,7 @@ function About() {
             With the collection of poetry <i>Awakening</i>, Deanna became a
             published author at age eleven. Her love of words quickly evolved
             into a penchant for songwriting, leading to the creation of her
-            debut album,
-            <i>Summerland</i>, released when she was fifteen. Shortly after{' '}
+            debut album,{' '}<i>Summerland</i>, released when she was fifteen. Shortly after{' '}
             <i>Summerland</i>’s release, Deanna began studying classical voice
             with the pianist and organist Paul Erickson.
           </p>
@@ -42,7 +41,7 @@ function About() {
             January of 2024, she recorded her sophomore album, <i>Green</i>,
             with producer Matthew Clinkenbeard at Glass House Studio in
             Nashville, TN. <i>Green</i>’s songs showcase Deanna’s prowess as a
-            writer, and highlights her versatility both as a vocalist and
+            writer, and highlight her versatility both as a vocalist and
             guitarist. A single from the album, titled “Cloverlooking,” was
             released on St. Patrick’s Day 2024. The entire album was released to
             all streaming services on October 25, 2024. Additional work is
