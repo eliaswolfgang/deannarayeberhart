@@ -233,7 +233,7 @@ h3 .navActive {
   width: 100%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .navbar-collapse {
     z-index: 100;
     background-color: var(--light);
