@@ -82,12 +82,12 @@ function Media() {
           <h3>Other Media</h3>
           <div className='d-flex justify-content-center'>
             <div style={{ fontSize: '5rem' }} className='m-3'>
-              <a href='https://open.spotify.com/artist/1PBjY5FldJcRtTyBLYyj5L'>
+              <a href='https://open.spotify.com/artist/1PBjY5FldJcRtTyBLYyj5L' target='_blank'>
                 <FontAwesomeIcon icon={faSpotify} />
               </a>
             </div>
             <div style={{ fontSize: '5rem' }} className='m-3'>
-              <a href='https://music.apple.com/us/artist/deanna-ray/1042687375'>
+              <a href='https://music.apple.com/us/artist/deanna-ray/1042687375' target='_blank'>
                 <FontAwesomeIcon icon={faApple} />
               </a>
             </div>
