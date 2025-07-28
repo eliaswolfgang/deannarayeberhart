@@ -7,7 +7,7 @@ function Footer() {
 
   return (
     <footer
-      className='d-flex align-items-center'
+      className='d-flex justify-content-center align-items-center'
       style={{
         fontSize: '2rem',
         padding: '0.5rem 0',
