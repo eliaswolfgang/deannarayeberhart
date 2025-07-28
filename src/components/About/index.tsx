@@ -1,60 +1,78 @@
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
+import full_headshot from '../../assets/opera_headshot_full.png';
 import opera_headshot2 from '../../assets/opera_headshot2.jpg';
 
 function About() {
   return (
-    <Container>
-      <Row className='mt-5'>
-        <Col xs={4}>
-          <Image fluid src={opera_headshot2} thumbnail />
+    <div style={{ backgroundColor: '#F0E8D5'}}>
+      <div>
+        <img
+          src={full_headshot}
+          alt='Deanna Ray Eberhart Headshot'
+          className='img-fluid'
+          style={{ width: '100vw' }}
+        />
+      </div>
+      <Row className='mt-4'>
+        <Col xs={6}>
+          <img
+            src={opera_headshot2}
+            alt='Deanna Ray Eberhart Headshot'
+            className='img-fluid'
+            style={{ width: '100%' }}
+            id='opera-headshot-2'
+          />
         </Col>
-        <Col xs={8}>
-          <p>
-            Deanna Ray Eberhart is a mezzo-soprano and
-            singer-songwriter from Kansas City, Missouri.
+        <Col xs={12} md={6}  className='mt-2 text-justify opera-bio'>
+        <div className='mr-4'>
+          <p className='text-black fw-bold'>
+            Young mezzo-soprano Deanna Ray Eberhart is a highly versatile
+            musician from Kansas City, Missouri with a “warm and indulgent
+            presence” onstage (KC Studio) and “considerable élan” (S. Fairbank).
           </p>
-          <p>
-            With the collection of poetry <i>Awakening</i>, Deanna became a
-            published author at age eleven. Her love of words quickly evolved
-            into a penchant for songwriting, leading to the creation of her
-            debut album,{' '}<i>Summerland</i>, released when she was fifteen. Shortly after{' '}
-            <i>Summerland</i>’s release, Deanna began studying classical voice
-            with the pianist and organist Paul Erickson.
+          <p className='text-black'>
+            In the summer of 2025, Deanna made her debut as Rossweisse in the
+            company premiere of Wagner’s <i>Die Walküre</i> at The Santa Fe
+            Opera, where she was a first-year apprentice singer. While at Santa
+            Fe, Deanna also covered the role of Countess Ceprano in{' '}
+            <i>Rigoletto</i> and appeared in the chorus of <i>La bohème</i>.
           </p>
-          <p>
-            For undergraduate study, Deanna attended the University of Northern
-            Iowa to study with Dr. Jean McDonald. She then attained a double
-            Master of Music degree at the University of Kansas in Church Music
-            (Choral Conducting) and Voice Performance, studying with Dr. Michael
-            Bauer and the legendary mezzo-soprano Joyce Castle. During her time
-            at KU, Deanna worked as an Apprentice Artist for the Lyric Opera of
-            Kansas City, singing as a chorister in the 2022-23 season. During
-            the 2023-24 season, she made her professional debut in two named
-            roles as Gertrude in Gounod’s <i>Romeo et Juliette</i> and
+          <p className='text-black'>
+            Prior to her work with Santa Fe, Deanna appeared with the Lyric
+            Opera of Kansas City as Gertrude in <i>Romeo et Juliette</i> and
             Flosshilde in <i>Journey to Valhalla</i>, a compendium of Wagner’s
-            Ring Cycle. She will sing the role of Rossweisse in the Santa Fe
-            Opera’s production of <i>Die Walküre</i> in their 2025 summer
-            festival season.
+            Ring Cycle compiled by conductor Michael Christie.
           </p>
-          <p>
-            During her classical study, Deanna continued writing songs. In
-            January of 2024, she recorded her sophomore album, <i>Green</i>,
-            with producer Matthew Clinkenbeard at Glass House Studio in
-            Nashville, TN. <i>Green</i>’s songs showcase Deanna’s prowess as a
-            writer, and highlight her versatility both as a vocalist and
-            guitarist. A single from the album, titled “Cloverlooking,” was
-            released on St. Patrick’s Day 2024. The entire album was released to
-            all streaming services on October 25, 2024. Additional work is
-            forthcoming.
+          <p className='text-black'>
+            In 2024, Deanna graduated with a double MM degree in Voice
+            Performance and Church Music (Choral Conducting) from the University
+            of Kansas. During her vocal study there, she worked with legendary
+            mezzo-soprano Joyce Castle. There, she performed as Little Buttercup
+            in <i>H.M.S. Pinafore</i> and as La Zia Principessa in{' '}
+            <i>Suor Angelica</i> before being hired as an Apprentice Artist with
+            the Lyric Opera of Kansas City, where she performed in the choruses
+            of <i>Carmen</i>, <i>La traviata</i>,
+            <i>Amahl and the Night Visitors</i>, <i>Cavalleria Rusticana</i>,{' '}
+            <i>Pagliacci</i>, and
+            <i>The Sound of Music</i>. Deanna also appears as a chorister on the
+            GRAMMY® nominated recording of <i>The Shining</i> by Mark Campbell
+            and Paul Moravec, performed and recorded by the Lyric Opera of
+            Kansas City in 2023 before its release on Pentatone in 2024.
           </p>
-          <p>
-            When not making noise, Deanna enjoys tending to her garden, trying
-            gourmet food and drink from local restaurants, and spending time
-            with her husband, Ian Von Fange, and their two cats, Nashi and Ted.
+          <p className='text-black'>
+            Deanna is also a graduate of the University of Northern Iowa school
+            of music, where she attained a Bachelor of Arts in Music. Under the
+            tutelage of technician Dr. Jean McDonald and coach Dr. Korey
+            Barrett, Deanna performed the role of Arsamene in Handel’s{' '}
+            <i>Serse</i>, as well as scenes from <i>La Cenerentola</i>{' '}
+            (Angelina), <i>Béatrice et Bénédict</i> (Béatrice),{' '}
+            <i>La Clemenza di Tito</i> (Sesto), and{' '}
+            <i>The Merry Wives of Windsor</i> (Meg Page).
           </p>
+          </div>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 }
 

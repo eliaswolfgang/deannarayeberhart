@@ -46,11 +46,11 @@ function Contact() {
   };
 
   return (
-    <Container>
+    <Container style={{ backgroundColor: '#F0E8D5', marginBottom: '7.5rem' }}>
       <Row className='mt-5'>
         <Col xs={12}>
           <Form style={{width: '100%'}} onSubmit={handleSubmit}>
-            <Form.Label>Name</Form.Label>
+            <Form.Label className='mt-3'>Name</Form.Label>
             <Form.Control
               type='text'
               name='from_name'
@@ -83,7 +83,7 @@ function Contact() {
             )}
             <Button
               className='my-2'
-              style={{ backgroundColor: 'darkgreen', color: 'lightgreen' }}
+              style={{ backgroundColor: 'white', color: 'black' }}
               type='submit'
             >
               Submit

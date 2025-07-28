@@ -3,34 +3,32 @@ import { Link, useLocation } from 'react-router-dom';
 
 const NavBar = () => {
   const { pathname } = useLocation();
+  const isEberhartSubdomain = pathname.startsWith('/eberhart');
+  const basePath = isEberhartSubdomain ? '/eberhart' : '';
+  
   return (
     <Navbar expand='sm' className='justify-content-end'>
-      <Navbar.Brand className={pathname === '/' ? 'navActive' : ''}>
-        <h1>
-          <Link to='/'>Deanna Ray Eberhart</Link>
-        </h1>
-      </Navbar.Brand>
       <Navbar.Toggle aria-controls='dre-hamburger-nav' />
       <Navbar.Collapse id='dre-hamburger-nav'>
         <Nav>
-          <Nav.Link className={pathname === '/portfolio' ? 'navActive' : ''}>
+          <Nav.Link className={pathname === `${basePath}/gallery` ? 'navActive' : ''}>
             <h3>
-              <Link to='/gallery'>Gallery</Link>
+              <Link to={`${basePath}/gallery`}>Gallery</Link>
             </h3>
           </Nav.Link>
-          <Nav.Link className={pathname === '/portfolio' ? 'navActive' : ''}>
+          <Nav.Link className={pathname === `${basePath}/media` ? 'navActive' : ''}>
             <h3>
-              <Link to='/media'>Media</Link>
+              <Link to={`${basePath}/media`}>Media</Link>
             </h3>
           </Nav.Link>
-          <Nav.Link className={pathname === '/contact' ? 'navActive' : ''}>
+          <Nav.Link className={pathname === `${basePath}/contact` ? 'navActive' : ''}>
             <h3>
-              <Link to='/contact'>Contact</Link>
+              <Link to={`${basePath}/contact`}>Contact</Link>
             </h3>
           </Nav.Link>
-          <Nav.Link className={pathname === '/resume' ? 'navActive' : ''}>
+          <Nav.Link className={pathname === `${basePath}/resume` ? 'navActive' : ''}>
             <h3>
-              <Link to='/resume'>Résumé</Link>
+              <Link to={`${basePath}/resume`}>Résumé</Link>
             </h3>
           </Nav.Link>
         </Nav>

@@ -28,8 +28,8 @@ function FolkGallery(): JSX.Element {
   return (
     <PhotoProvider>
       <Carousel activeIndex={index} onSelect={handleSelect}>
-        {folkPhotos.map(({ image, name, header, description }) => (
-          <Carousel.Item className='photo-parent'>
+        {folkPhotos.map(({ image, name, header, description }, i) => (
+          <Carousel.Item className='photo-parent' key={i}>
             <PhotoView src={image}>
               <Image
                 className='photo'
