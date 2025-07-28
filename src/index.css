@@ -250,7 +250,7 @@ h3 .navActive {
   }
 
   object {
-    width: 100%;
+    object-fit: contain;
   }
 
 }
