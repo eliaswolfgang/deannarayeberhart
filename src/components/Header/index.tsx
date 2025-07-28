@@ -26,7 +26,7 @@ const Header: React.FC = () => {
             }}
           >
             <Link
-              to='/deannaray'
+              to='/'
               className='text-blue-400 hover:text-blue-300 hover:italic transition-all duration-200 font-serif'
               style={{ padding: 0, margin: 0 }}
             >
@@ -51,7 +51,7 @@ const Header: React.FC = () => {
             }}
           >
             <Link
-              to='/eberhart'
+              to='/'
               className='text-green-400 hover:text-green-300 hover:italic transition-all duration-200 font-serif'
               style={{ padding: 0, margin: 0 }}
             >
