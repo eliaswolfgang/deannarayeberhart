@@ -22,10 +22,10 @@ function App() {
       ) : (
         <Outlet />
       )} */}
-      <Container fluid>
+      <Container>
         <Outlet />
       </Container>
-      {/* {!isLandingPage && <Footer />} */}\
+      {/* {!isLandingPage && <Footer />} */}
       <Footer />
     </>
   );

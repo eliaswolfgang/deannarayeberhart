@@ -19,8 +19,6 @@
 }
 
 main {
-  margin: 0 auto;
-  padding: 50px 30px;
   font-family: 'Calisto MT', serif;
 }
 
@@ -30,7 +28,10 @@ main {
 
 html,
 body {
-  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+  min-height: 100vh;
 }
 
 h1 {
@@ -170,11 +171,6 @@ nav h3 a {
   text-decoration: underline;
 }
 
-footer {
-  font-size: 48px;
-  justify-content: center;
-}
-
 footer a {
   color: #fafafa;
   opacity: 0.5;
@@ -223,17 +219,9 @@ h3 .navActive {
   font-size: 1.5rem;
 }
 
-.navbar-collapse {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
-  top: 100%;
-  left: 0;
-  width: 100%;
-}
 
 @media screen and (max-width: 450px) {
+
   .navbar-collapse {
     z-index: 100;
     background-color: #fafafa;
@@ -251,7 +239,6 @@ h3 .navActive {
   
   footer a {
     font-size: 1rem;
-    width: 100%;
   }
 
   #opera-headshot-2 {

@@ -10,7 +10,6 @@ function About() {
           src={full_headshot}
           alt='Deanna Ray Eberhart Headshot'
           className='img-fluid'
-          style={{ width: '100vw' }}
         />
       </div>
       <Row className='mt-4'>
