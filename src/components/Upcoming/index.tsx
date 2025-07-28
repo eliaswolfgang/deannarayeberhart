@@ -1,4 +1,3 @@
-import full_headshot from '../../assets/opera_headshot_full.png';
 const upcomingEvents = [
   {
     role: <p>Rossweisse</p>,
