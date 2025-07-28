@@ -27,6 +27,10 @@ const router = createBrowserRouter([
         element: <Media />,
       },
       {
+        path: '/upcoming',
+        element: <Upcoming />,
+      },
+      {
         path: '/contact',
         element: <Contact />,
       },
