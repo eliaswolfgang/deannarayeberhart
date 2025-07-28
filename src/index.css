@@ -249,4 +249,8 @@ h3 .navActive {
     padding: 1rem;
   }
 
+  object {
+    width: 100%;
+  }
+
 }
