@@ -225,7 +225,7 @@ h3 .navActive {
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 900px) {
   .navbar-collapse {
     z-index: 100;
     background-color: #fafafa;
@@ -255,5 +255,18 @@ h3 .navActive {
 
   object {
     object-fit: contain;
+  }
+  footer {
+    flex-direction: column;
+    align-items: space-between;
+  }
+
+  .links-and-copyright {
+    display: flex;
+    justify-content: center;
+  }
+
+  .links-and-copyright p {
+    font-size: 0.5rem;
   }
 }
