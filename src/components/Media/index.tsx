@@ -2,9 +2,6 @@ import { Row, Col, Container } from 'react-bootstrap';
 import { SpinningCircles } from 'react-loading-icons';
 import ReactPlayer from 'react-player/lazy';
 import OperaGallery from './OperaGallery';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const operaMedia = [
   {
