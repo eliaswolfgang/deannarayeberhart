@@ -225,6 +225,13 @@ h3 .navActive {
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
+.upcoming-card {
+  width: 30rem;
+  height: 15rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (max-width: 900px) {
   .navbar-collapse {
     z-index: 100;
@@ -268,5 +275,8 @@ h3 .navActive {
 
   .links-and-copyright p {
     font-size: 0.5rem;
+  }
+  .upcoming-card {
+    width: 100%;
   }
 }

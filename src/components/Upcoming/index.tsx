@@ -52,9 +52,9 @@ function Upcoming() {
   return (
     <div>
       <h1 className='text-center my-4'>Upcoming</h1>
-      <div className='flex flex-column align-items-center'>
+      <div className='flex flex-col justify-center align-items-center'>
         {upcomingEvents.map((event, index) => (
-          <div className='card shadow-lg my-3' style={{ width: '50%' }} key={index}>
+          <div className='card shadow-lg my-3 upcoming-card' key={index}>
             <div className='card-body'>
               <h5 className='card-title'>{event.role}</h5>
               <span className='card-text'>{event.show}</span>

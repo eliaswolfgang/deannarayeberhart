@@ -118,7 +118,7 @@ function Footer() {
             />
           </a>
         </div>
-        <p style={{ fontSize: '1.5rem', color: '#999' }}>
+        <p style={{ color: '#999' }}>
           © 2024 Deanna Ray Eberhart
         </p>
       </div>
