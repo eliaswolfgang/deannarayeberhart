@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 .hover-italic {
   transition: all 0.2s ease-in-out;
@@ -204,7 +204,7 @@ textarea {
 
 h1 .navActive,
 h3 .navActive {
-  color: #DBC9C9;
+  color: #dbc9c9;
   cursor: default;
   font-size: 2rem;
   text-shadow: 3px 3px 15px rgba(255, 255, 255, 0.5);
@@ -219,14 +219,17 @@ h3 .navActive {
   font-size: 1.5rem;
 }
 
+.links-and-copyright {
+  display: none;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
 
 @media screen and (max-width: 450px) {
-
   .navbar-collapse {
     z-index: 100;
     background-color: #fafafa;
   }
-  
+
   .navbar-brand h1 {
     font-size: 2rem;
     color: #fafafa;
@@ -236,7 +239,7 @@ h3 .navActive {
   .navbar-toggler {
     margin-top: -2rem;
   }
-  
+
   footer a {
     font-size: 1rem;
   }
@@ -252,5 +255,4 @@ h3 .navActive {
   object {
     object-fit: contain;
   }
-
 }

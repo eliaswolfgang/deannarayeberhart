@@ -74,5 +74,7 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById('root')!).render(
+  <div className='list'>
     <RouterProvider router={router} />
+  </div>
 );

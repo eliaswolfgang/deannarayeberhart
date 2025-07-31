@@ -5,14 +5,13 @@ import OperaGallery from './OperaGallery';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 const operaMedia = [
   {
-    link: 'https://www.youtube.com/watch?v=_76MWXNfTvs&ab_channel=DeannaRayEberhart%2CMezzo-soprano',
+    link: 'https://www.youtube.com/watch?v=ygI_tGrTl80&feature=youtu.be&themeRefresh=1',
     description: (
       <span>
-        "Parto, ma tu ben mio" from Mozart's <em>La Clemenza di Tito</em> (2023)
+       "When I'm laid in earth" from <em>Dido and Aeneas</em> (Purcell)  (2025)
       </span>
     ),
   },
@@ -20,7 +19,7 @@ const operaMedia = [
     link: 'https://www.youtube.com/watch?v=yX2jG-OvyWM&ab_channel=DeannaRayEberhart%2CMezzo-soprano',
     description: (
       <span>
-        <em>Vier Ernste Gesänge, Op. 121</em> - Johannes Brahms
+        <em>Vier Ernste Gesänge, Op. 121</em> (Johannes Brahms) (2024)
       </span>
     ),
   },
@@ -29,29 +28,7 @@ const operaMedia = [
 function OperaMedia() {
   return (
     <Container>
-      <div className='flex justify-around'>
-        <a href='https://www.facebook.com/deannaraymezzo' target='_blank' rel='noopener noreferrer'>
-        <FontAwesomeIcon
-          icon={faFacebook}
-          style={{ fontSize: '3rem', color: '#4267B2' }}
-          className='mb-3'
-        />
-        </a>
-        <a href='https://www.instagram.com/deannaraymezzo' target='_blank' rel='noopener noreferrer'>
-        <FontAwesomeIcon
-          icon={faInstagram}
-          style={{ fontSize: '3rem', color: '#E1306C' }}
-          className='mb-3'
-        />
-        </a>
-        <a href='https://www.youtube.com/channel/UCNUl-w67MfvUavRJSKohhaA' target='_blank' rel='noopener noreferrer'>
-        <FontAwesomeIcon
-          icon={faYoutube}
-          style={{ fontSize: '3rem', color: '#F4320B' }}
-          className='mb-3'
-        />
-        </a>
-      </div>
+      
       <Row className='py-5'>
           {operaMedia.map(({ link, description }, i) => (
             <Col xs={12} md={6} className='my-2' key={i}>
