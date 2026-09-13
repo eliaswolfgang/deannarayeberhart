@@ -1,49 +1,50 @@
-import { useState } from 'react';
-import emailjs from '@emailjs/browser';
-import { Form, Button, Container, Col, Row } from 'react-bootstrap';
+// import { useState } from 'react';
+// import emailjs from '@emailjs/browser';
+// import { Form, Button, Container, Col, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
-import { validateEmail } from '../../utils/helpers.js';
+// import { validateEmail } from '../../utils/helpers.js';
 
 function Contact() {
-  const [formState, setFormState] = useState({
-    from_name: '',
-    reply_to: '',
-    message: '',
-  });
+  // const [formState, setFormState] = useState({
+  //   from_name: '',
+  //   reply_to: '',
+  //   message: '',
+  // });
 
-  const [errorMessage, setErrorMessage] = useState('');
-  // const { from_name, reply_to, message } = formState;
-  const SERVICE_ID = 'service_deanna_ray_mezzo';
-  const TEMPLATE_ID = 'template_8cjthkc';
+  // const [errorMessage, setErrorMessage] = useState('');
+  // // const { from_name, reply_to, message } = formState;
+  // const SERVICE_ID = 'service_deanna_ray_mezzo';
+  // const TEMPLATE_ID = 'template_8cjthkc';
 
-  const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log(e.currentTarget);
-    if (!errorMessage) {
-      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.currentTarget, {
-        publicKey: 'vDvgS5b65FSmKdgtz',
-      });
-      setFormState({ from_name: '', reply_to: '', message: '' });
-    }
-  };
+  // const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   console.log(e.currentTarget);
+  //   if (!errorMessage) {
+  //     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.currentTarget, {
+  //       publicKey: 'vDvgS5b65FSmKdgtz',
+  //     });
+  //     setFormState({ from_name: '', reply_to: '', message: '' });
+  //   }
+  // };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.name === 'reply_to') {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage('Your email is invalid.');
-      } else {
-        setErrorMessage('');
-      }
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.dataset.name} is required.`);
-      } else {
-        setErrorMessage('');
-      }
-    }
-    setFormState({ ...formState, [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   if (e.target.name === 'reply_to') {
+  //     const isValid = validateEmail(e.target.value);
+  //     if (!isValid) {
+  //       setErrorMessage('Your email is invalid.');
+  //     } else {
+  //       setErrorMessage('');
+  //     }
+  //   } else {
+  //     if (!e.target.value.length) {
+  //       setErrorMessage(`${e.target.dataset.name} is required.`);
+  //     } else {
+  //       setErrorMessage('');
+  //     }
+  //   }
+  //   setFormState({ ...formState, [e.target.name]: e.target.value });
+  // };
 
   return (
     <Container style={{ backgroundColor: '#F0E8D5', marginBottom: '7.5rem' }}>
