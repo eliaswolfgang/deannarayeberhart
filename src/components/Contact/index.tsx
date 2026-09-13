@@ -92,7 +92,7 @@ function Contact() {
           </Form>
         </Col>
       </Row> */}
-      <p>You can email me by clicking <a href="mailto:mymail@somemail.com">here</a></p>
+      <p>You can email me by clicking <a href="mailto:deannaray.mezzo@gmail.com">here</a></p>
       <p>Or you can always reach me at deannaray.mezzo@gmail.com</p> 
     </Container>
   );
