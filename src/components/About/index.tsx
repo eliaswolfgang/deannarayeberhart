@@ -26,17 +26,26 @@ function About() {
         <Col xs={12} md={6} className='mt-2 text-justify opera-bio'>
           <div className='mr-4'>
             <p className='text-black fw-bold'>
-              Young mezzo-soprano Deanna Ray Eberhart is a highly versatile
-              musician from Kansas City, Missouri with a “warm and indulgent
-              presence” onstage (KC Studio) and “considerable élan” (S.
-              Fairbank).
+              Lauded for her “luminous, warmly enveloping sound” (Opera Today)
+              and “concentrated intensity” onstage (Musical America), Kansas
+              City-born mezzo-soprano Deanna Ray Eberhart is a highly versatile
+              musician with “considerable élan” (S. Fairbank). For the 2026-27
+              season, Deanna joins the International Opernstudio of the
+              Staatsoper Stuttgart in Germany, where she will appear as Annina
+              in <i>La Traviata</i>, Tisbe in <i>La Cenerentola,</i> and Mary in{' '}
+              <i>Der fliegende Holländer</i>.
             </p>
             <p className='text-black'>
-              In the summer of 2025, Deanna made her debut as Rossweisse in the
-              company premiere of Wagner’s <i>Die Walküre</i> at The Santa Fe
-              Opera, where she was a first-year apprentice singer. While at
-              Santa Fe, Deanna also covered the role of Countess Ceprano in{' '}
-              <i>Rigoletto</i> and appeared in the chorus of <i>La bohème</i>.
+              Quickly rising as a sought-after performer of dramatic repertoire,
+              Deanna made her debut as Rossweisse in <i>Die Walküre</i> at the
+              Santa Fe Opera--a company premiere--in the summer of 2025 as a
+              first-year Apprentice Artist. She returned to Santa Fe for her
+              second-year apprenticeship in 2026 to perform as the Second Lady
+              in an inventive new staging of <i>The Magic Flute</i>, and also
+              sang the role of Dagmar in the North American premiere of{' '}
+              <i>Lili Elbe</i> by Tobias Picker and Aryeh Stollman. As Dagmar,
+              Deanna received widespread acclaim for her “vividly portrayed”
+              (Dallas Morning News) and “sharp-edged” (Parterre) performance.
             </p>
             <p className='text-black'>
               Prior to her work with Santa Fe, Deanna appeared with the Lyric
@@ -45,29 +54,28 @@ function About() {
               Ring Cycle compiled by conductor Michael Christie.
             </p>
             <p className='text-black'>
-              In 2024, Deanna graduated with a double MM degree in Voice
-              Performance and Church Music (Choral Conducting) from the
-              University of Kansas. During her vocal study there, she worked
-              with legendary mezzo-soprano Joyce Castle. There, she performed as
-              Little Buttercup in <i>H.M.S. Pinafore</i> and as La Zia
-              Principessa in <i>Suor Angelica</i> before being hired as an
-              Apprentice Artist with the Lyric Opera of Kansas City, where she
-              performed in the choruses of <i>Carmen</i>, <i>La traviata</i>, <i>Amahl and the Night Visitors</i>, <i>Cavalleria Rusticana</i>,{' '}
-              <i>Pagliacci</i>, and <i>The Sound of Music</i>. Deanna also appears as a chorister on
-              the GRAMMY® nominated recording of <i>The Shining</i> by Mark
-              Campbell and Paul Moravec, performed and recorded by the Lyric
-              Opera of Kansas City in 2023 before its release on Pentatone in
-              2024.
+              Deanna was an Apprentice Artist with the Lyric Opera of Kansas
+              City from 2022-2024. There, she performed as Gertrude in{' '}
+              <i> Roméo et Juliette</i> and Flosshilde in{' '}
+              <i>Journey to Valhalla</i>, a compendium of Wagner’s Ring Cycle
+              created by American conductor Michael Christie. She also sang as a
+              chorister in eight other LOKC productions during herntraining
+              there, including the GRAMMY nominated recording of{' '}
+              <i>The Shining</i> by Mark Campbell and Paul Moravec conducted by
+              Gerard Schwarz, based on the best-selling novel by Stephen King.
             </p>
             <p className='text-black'>
-              Deanna is also a graduate of the University of Northern Iowa
-              school of music, where she attained a Bachelor of Arts in Music.
-              Under the tutelage of technician Dr. Jean McDonald and coach Dr.
-              Korey Barrett, Deanna performed the role of Arsamene in Handel’s{' '}
-              <i>Serse</i>, as well as scenes from <i>La Cenerentola</i>{' '}
-              (Angelina), <i>Béatrice et Bénédict</i> (Béatrice),{' '}
-              <i>La Clemenza di Tito</i> (Sesto), and{' '}
-              <i>The Merry Wives of Windsor</i> (Meg Page).
+              In 2026, Deanna was the winner of the Kansas City District of the
+              Metropolitan Opera Laffont Competition, a semi-finalist for the
+              Houston Grand Opera Eleanor McCollum Competition, and a finalist
+              for the Dallas Opera Competition. She holds a double MM degree in
+              Voice Performance and Church Music from the University of Kansas
+              and a Bachelor of Arts in Music from the University of Northern
+              Iowa. She has studied with Dr. Jean McDonald, Joyce Castle, and
+              Nova Thomas. Other role credits include La Zia Principessa in
+              Puccini's <i>Suor Angelica</i>, Little Buttercup in Gilbert and
+              Sullivan's <i>H.M.S. Pinafore</i>, Alidora in a gender-bent production of
+              Rossini's <i>La Cenerentola</i>, and Arsamene in Händel's <i>Serse</i>.
             </p>
           </div>
         </Col>
