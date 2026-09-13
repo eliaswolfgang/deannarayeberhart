@@ -12,7 +12,7 @@ function Contact() {
   });
 
   const [errorMessage, setErrorMessage] = useState('');
-  const { from_name, reply_to, message } = formState;
+  // const { from_name, reply_to, message } = formState;
   const SERVICE_ID = 'service_deanna_ray_mezzo';
   const TEMPLATE_ID = 'template_8cjthkc';
 
@@ -47,7 +47,7 @@ function Contact() {
 
   return (
     <Container style={{ backgroundColor: '#F0E8D5', marginBottom: '7.5rem' }}>
-      <Row className='mt-5'>
+      {/* <Row className='mt-5'>
         <Col xs={12}>
           <Form style={{width: '100%'}} onSubmit={handleSubmit}>
             <Form.Label className='mt-3'>Name</Form.Label>
@@ -90,7 +90,9 @@ function Contact() {
             </Button>
           </Form>
         </Col>
-      </Row>
+      </Row> */}
+      <p>You can email me by clicking <a href="mailto:mymail@somemail.com">here</a></p>
+      <p>Or you can always reach me at deannaray.mezzo@gmail.com</p> 
     </Container>
   );
 }
