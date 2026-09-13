@@ -45,6 +45,11 @@ function Contact() {
   //   }
   //   setFormState({ ...formState, [e.target.name]: e.target.value });
   // };
+  const emailAdd = 'mailto:' + encodeURIComponent('deannaray.mezzo@gmail.com');
+  const buildEmailTag = () => {
+    return <a href={emailAdd}>here</a>
+    
+  };
 
   return (
     <Container style={{ backgroundColor: '#F0E8D5', marginBottom: '7.5rem' }}>
@@ -92,8 +97,8 @@ function Contact() {
           </Form>
         </Col>
       </Row> */}
-      <p>You can email me by clicking <a href="mailto:deannaray.mezzo@gmail.com">here</a></p>
-      <p>Or you can always reach me at deannaray.mezzo@gmail.com</p> 
+      <p>You can email me by clicking {buildEmailTag()}</p>
+      <p>Or you can always reach me at deannaray.mezzo@gmail.com</p>
     </Container>
   );
 }
